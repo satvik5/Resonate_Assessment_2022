@@ -1,7 +1,9 @@
 import React, { useEffect, useRef } from "react";
 // import Map, { GeolocateControl } from "react-map-gl";
 // import "mapbox-gl/dist/mapbox-gl.css";
-import mapboxgl from "mapbox-gl";
+// eslint-disable-next-line import/no-webpack-loader-syntax
+import mapboxgl from "!mapbox-gl";
+//Apparently adding '!' sign helps mapbox loading. Without '!', mapbox doesn't load
 const MapEmbedded = (props) => {
   mapboxgl.accessToken =
     "pk.eyJ1Ijoic2F0dmlreWFkYXYiLCJhIjoiY2w3dzlsdjAzMGpkbDNubXYyY2pudGlsdSJ9.yV1mnoKIv-oMkXeEg64L-Q";
