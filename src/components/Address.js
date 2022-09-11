@@ -1,5 +1,4 @@
 import React from "react";
-import MapEmbedded from "./MapEmbedded";
 
 const Address = (props) => {
   const { address } = props;
