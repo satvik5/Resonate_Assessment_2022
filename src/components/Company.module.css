@@ -1,0 +1,8 @@
+.bs {
+  /* color: white; */
+  display: flex;
+  flex-direction: column;
+  /* width: 50%; */
+  /* flex-basis: 100%; */
+  /* margin: 2.5%; */
+}

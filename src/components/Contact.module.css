@@ -1,0 +1,29 @@
+.contact {
+  width: 85%;
+  height: max-content;
+  /* display: grid; */
+  /* display: list-item; */
+  background-image: linear-gradient(to right, #ff9966, #ff5e62);
+  border-bottom: 4px solid black;
+  font-family: cursive;
+  /* padding: 50px 0; */
+  margin: 30px;
+  justify-content: center;
+  /* box-sizing: border-box; */
+}
+.contact_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+}
+
+.contact_grid span {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 700px) {
+  .contact_grid {
+    display: block;
+    flex-direction: row;
+  }
+}
